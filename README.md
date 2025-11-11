@@ -1,2 +1,0 @@
-# proposal
-Final Project Proposal
