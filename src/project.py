@@ -72,6 +72,21 @@ def explain_q3(ans3):
 CREATE main window pop-up
     SET title = "Daily Art List"
     SET window size and background color'''
+class DailyArtApp(tk.Tk):
+    def __init__(self):
+        super().__init__()
+
+        self.title("Daily Art List")
+        self.geometry("700x650")
+        self.configure(bg=BG_COLOR)
+
+        # Store answers
+        self.name_var = tk.StringVar()
+        self.q1_var = tk.StringVar()
+        self.q2_var = tk.StringVar()
+        self.q3_var = tk.StringVar()
+
+        self.create_widgets()
 
 '''
 CREATE name input field so it feels personal'''
