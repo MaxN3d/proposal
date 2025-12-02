@@ -87,7 +87,15 @@ class DailyArtApp(tk.Tk):
         self.q3_var = tk.StringVar()
 
         self.create_widgets()
-
+    
+    def create_widgets(self):
+        # Title
+        tk.Label(
+            self, text="Daily Art List",
+            font=("Comic Sans MS", 24, "bold"),
+            bg=BG_COLOR,
+            fg=TEXT_COLOR
+        ).pack(pady=10)
 '''
 CREATE name input field so it feels personal'''
 
