@@ -194,6 +194,23 @@ FUNCTION on_generate():
         popup.title("Your Tailored List")
         popup.configure(bg=FRAME_COLOR)
         popup.geometry("600x500")
+
+        header_text = (
+            f"Hi {name}!\n\n"
+            "Your selections:\n"
+            f"  - Vibe: {explain_q1(ans1)}\n"
+            f"  - Reason: {explain_q2(ans2)}\n"
+            f"  - Posting plan: {explain_q3(ans3)}\n\n"
+            "Here’s your tailored activity list:\n"
+        )
+
+        header_label = tk.Label(
+            popup, text=header_text,
+            bg=FRAME_COLOR, fg=TEXT_COLOR,
+            font=("Helvetica", 12), justify="left"
+        )
+        header_label.pack(pady=10, padx=10, anchor="w")
+
 '''
     CREATE POPUP WINDOW
         SET background/theme
