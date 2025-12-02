@@ -48,7 +48,26 @@ FUNCTION explain_q2(code):
 FUNCTION explain_q3(code):
     RETURN posting plan for question 3 selection
 '''
+def explain_q1(ans1):
+    return {
+        "A1": "Let's get our hands dirty!",
+        "A2": "I want to sit down today.",
+        "A3": "I'm lazy."
+    }.get(ans1, "Unknown vibe.")
 
+def explain_q2(ans2):
+    return {
+        "B1": "I want to better my portfolio!",
+        "B2": "I want to work on refining my skills!",
+        "B3": "I'm lazy."
+    }.get(ans2, "Unknown motivation.")
+
+def explain_q3(ans3):
+    return {
+        "C1": "TikTok",
+        "C2": "Instagram",
+        "C3": "Nowhere, because I'm lazy."
+    }.get(ans3, "Unknown posting place.")
 '''
 CREATE main window pop-up
     SET title = "Daily Art List"
