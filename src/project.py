@@ -9,6 +9,13 @@ ACCENT_COLOR = "#B200ED"
 TEXT_COLOR = "#ffffff"
 
 '''DEFINE activity lists (1-9)'''
+LIST_01 = [
+    "Do some figure drawing\n[Studying the human form will help with perspective and dynamic poses!]",
+    "Pottery\n[Getting your hands dirty always helps break up a mundane routine!]",
+    "Character designs\n[This gets your creative juices flowing!]",
+    "Artist Study\n[Who's someone you idolize? Do a study on their work!]",
+    "Painting\n[Painting always helps refine color theory, form, and composition — plus it's fun!]"
+]
 '''DEFINE default_list for combinations/invalid choices'''
 
 '''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
