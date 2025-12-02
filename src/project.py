@@ -159,10 +159,25 @@ DISPLAY Q3 using radio buttons:
             ("Nowhere, because I'm lazy", "C3")
         ])
 
-'''
+        '''
 DISPLAY button: "Get My List"
     WHEN CLICKED → RUN on_generate()
 '''
+        # Generate Button
+        tk.Button(
+            self, text="Get My List", command=self.on_generate,
+            bg=ACCENT_COLOR, fg="white", activebackground="#D09CFF"
+        ).pack(pady=10)
+
+    def on_generate(self):
+        name = self.name_var.get().strip() or "Artist"
+        ans1, ans2, ans3 = self.q1_var.get(), self.q2_var.get(), self.q3_var.get()
+
+        if not (ans1 and ans2 and ans3):
+            messagebox.showwarning("Incomplete", "Please answer all three questions.")
+            return
+
+        art_list = get_art_list(ans1, ans2, ans3)
 '''
 FUNCTION on_generate():
     READ name input OR default to "Artist"
