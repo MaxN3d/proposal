@@ -211,6 +211,20 @@ FUNCTION on_generate():
         )
         header_label.pack(pady=10, padx=10, anchor="w")
 
+        text_box = tk.Text(
+            popup, wrap="word", bg="#F2E6FF", fg="black",
+            highlightbackground=ACCENT_COLOR, height=15
+        )
+        text_box.pack(fill="both", expand=True, padx=10, pady=5)
+
+        for i, item in enumerate(art_list, start=1):
+            text_box.insert(tk.END, f"{i}. {item}\n")
+
+        
+        tk.Button(
+            popup, text="Close", command=popup.destroy,
+            bg=ACCENT_COLOR, fg="white"
+        ).pack(pady=10)
 '''
     CREATE POPUP WINDOW
         SET background/theme
