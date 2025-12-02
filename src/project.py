@@ -3,6 +3,10 @@ import tkinter as tk
 from tkinter import messagebox
 
 '''DEFINE colors for graphic user interface (GUI) theme'''
+BG_COLOR = "#D7BFDC"
+FRAME_COLOR = "#9966CB"
+ACCENT_COLOR = "#B200ED"
+TEXT_COLOR = "#ffffff"
 
 '''DEFINE activity lists (1-9)'''
 '''DEFINE default_list for combinations/invalid choices'''
