@@ -1,11 +1,13 @@
-'''PROGRM START
+'''PROGRM START'''
+import tkinter as tk
+from tkinter import messagebox
 
-DEFINE colors for graphic user interface (GUI) theme
+'''DEFINE colors for graphic user interface (GUI) theme'''
 
-DEFINE activity lists (1-9)
-DEFINE default_list for combinations/invalid choices
+'''DEFINE activity lists (1-9)'''
+'''DEFINE default_list for combinations/invalid choices'''
 
-DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
+'''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
 their respective list
 
 -----------------------------------------------------------------
