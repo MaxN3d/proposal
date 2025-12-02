@@ -38,7 +38,8 @@ FUNCTION get_art_list(q1,q2,q3):
     	ELSE:
         	RETURN DEFAULT_LIST
 END FUNCTION'''
-
+def get_art_list(ans1, ans2, ans3):
+    return ART_LISTS.get((ans1, ans2, ans3), DEFAULT_LIST)
 '''
 FUNCTION explain_q1(code):
     RETURN vibe for question 1 selection
