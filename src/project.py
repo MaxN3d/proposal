@@ -96,9 +96,20 @@ class DailyArtApp(tk.Tk):
             bg=BG_COLOR,
             fg=TEXT_COLOR
         ).pack(pady=10)
-'''
+        '''
 CREATE name input field so it feels personal'''
-
+        # Name Input
+        name_frame = tk.Frame(self, bg=BG_COLOR)
+        name_frame.pack(pady=5)
+        tk.Label(
+            name_frame, text="Your name:",
+            bg=BG_COLOR, fg=TEXT_COLOR
+        ).pack(side=tk.LEFT)
+        tk.Entry(
+            name_frame, textvariable=self.name_var,
+            width=25, bg="white", fg="black",
+            highlightbackground=ACCENT_COLOR
+        ).pack(side=tk.LEFT, padx=5)
 '''
 DISPLAY Q1 using radio buttons:
     A1 → Let's get our hands dirty
