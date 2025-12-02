@@ -125,24 +125,40 @@ CREATE name input field so it feels personal'''
                     bg=FRAME_COLOR, fg=TEXT_COLOR, selectcolor=ACCENT_COLOR,
                     activebackground=ACCENT_COLOR
                 ).pack(anchor="w")
-'''
+        '''
 DISPLAY Q1 using radio buttons:
     A1 → Let's get our hands dirty
     A2 → I want to sit down today
     A3 → I'm lazy'''
 
-'''
+        create_radio_frame("Q1 – What's the vibe?", self.q1_var, [
+            ("Let's get our hands dirty!", "A1"),
+            ("I want to sit down today", "A2"),
+            ("I'm lazy", "A3")
+        ])
+        '''
 DISPLAY Q2 using radio buttons:
     B1 → I want to better my portfolio
     B2 → I want to work on refining my skills
     B3 → I'm lazy
 '''
-'''
+        create_radio_frame("Q2 – Why do you want to do these activities?", self.q2_var, [
+            ("I want to better my portfolio!", "B1"),
+            ("I want to work on refining my skills!", "B2"),
+            ("I'm lazy", "B3")
+        ])
+        '''
 DISPLAY Q3 using radio buttons:
     C1 → TikTok
     C2 → Instagram
     C3 → Nowhere, because I'm lazy
 '''
+        create_radio_frame("Q3 – Lastly, where should you post your work?", self.q3_var, [
+            ("TikTok", "C1"),
+            ("Instagram", "C2"),
+            ("Nowhere, because I'm lazy", "C3")
+        ])
+
 '''
 DISPLAY button: "Get My List"
     WHEN CLICKED → RUN on_generate()
