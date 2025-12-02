@@ -16,7 +16,10 @@ LIST_01 = [
     "Artist Study\n[Who's someone you idolize? Do a study on their work!]",
     "Painting\n[Painting always helps refine color theory, form, and composition — plus it's fun!]"
 ]
+
 '''DEFINE default_list for combinations/invalid choices'''
+LIST_02 = ["Activity A", "Activity B", "Activity C"]
+DEFAULT_LIST = ["Sketch for 5 minutes", "Pick a detail to refine", "Sign it or scrap it — both are wins!"]
 
 '''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
 their respective list
