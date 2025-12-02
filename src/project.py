@@ -240,3 +240,6 @@ END FUNCTION
 RUN main loop
 PROGRAM ENDS
 ''' 
+if __name__ == "__main__":
+    app = DailyArtApp()
+    app.mainloop()
