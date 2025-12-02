@@ -110,6 +110,21 @@ CREATE name input field so it feels personal'''
             width=25, bg="white", fg="black",
             highlightbackground=ACCENT_COLOR
         ).pack(side=tk.LEFT, padx=5)
+
+        # Radio Frame helper
+        def create_radio_frame(title, var, options):
+            frame = tk.LabelFrame(
+                self, text=title, padx=10, pady=10,
+                bg=FRAME_COLOR, fg=TEXT_COLOR,
+                highlightbackground=ACCENT_COLOR
+            )
+            frame.pack(fill="x", padx=15, pady=5)
+            for text, value in options:
+                tk.Radiobutton(
+                    frame, text=text, variable=var, value=value,
+                    bg=FRAME_COLOR, fg=TEXT_COLOR, selectcolor=ACCENT_COLOR,
+                    activebackground=ACCENT_COLOR
+                ).pack(anchor="w")
 '''
 DISPLAY Q1 using radio buttons:
     A1 → Let's get our hands dirty
