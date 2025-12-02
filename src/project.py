@@ -178,7 +178,7 @@ DISPLAY button: "Get My List"
             return
 
         art_list = get_art_list(ans1, ans2, ans3)
-'''
+        '''
 FUNCTION on_generate():
     READ name input OR default to "Artist"
     READ selected Q1, Q2, Q3 codes
@@ -189,7 +189,12 @@ FUNCTION on_generate():
 
     CALL get_art_list() to retrieve correct activity list
     FORMAT summary text using explain_q1/q2/q3 results
-
+    '''
+        popup = tk.Toplevel(self)
+        popup.title("Your Tailored List")
+        popup.configure(bg=FRAME_COLOR)
+        popup.geometry("600x500")
+'''
     CREATE POPUP WINDOW
         SET background/theme
         SHOW:
@@ -199,7 +204,6 @@ FUNCTION on_generate():
         ADD "Close" button to exit popup
 
 END FUNCTION
------------------------------------
 '''
 '''
 RUN main loop
