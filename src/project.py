@@ -18,7 +18,13 @@ LIST_01 = [
 ]
 
 '''DEFINE default_list for combinations/invalid choices'''
-LIST_02 = ["Activity A", "Activity B", "Activity C"]
+LIST_02 = [
+    "Practice animating body mechanics\n[Body mechanics will never disappear, so let's do some practice!]", 
+    "Do a simple rig\n[Rigging is hard, so some practice will make it second nature!]",
+    "Do a beat/storyboard to dialogue\n[This helps by getting your creative juices flowing!]",
+    "Practice on python\n[Coding is a skill that can always be built upon! Let’s make some simple programs!]",
+    "Do a technique breakdown\n[This shows people your way of thinking! Let’s break it down!]"
+]
 DEFAULT_LIST = ["Sketch for 5 minutes", "Pick a detail to refine", "Sign it or scrap it — both are wins!"]
 
 '''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
@@ -27,6 +33,9 @@ ART_LISTS = {
     ("A1", "B1", "C1"): LIST_01,
     ("A2", "B2", "C1"): LIST_01,
     ("A1", "B2", "C3"): LIST_01,
+    ("A2", "B1", "C2"): LIST_02,
+    ("A2", "B2", "C2"): LIST_02,
+    ("A2", "B1", "C3"): LIST_02,
     # Add more combos later...
 }
 
@@ -64,8 +73,8 @@ def explain_q2(ans2):
 
 def explain_q3(ans3):
     return {
-        "C1": "TikTok",
-        "C2": "Instagram",
+        "C1": "Social Media",
+        "C2": "LinkedIn",
         "C3": "Nowhere, because I'm lazy."
     }.get(ans3, "Unknown posting place.")
 '''
