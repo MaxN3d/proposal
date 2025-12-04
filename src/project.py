@@ -25,6 +25,14 @@ LIST_02 = [
     "Practice on python\n[Coding is a skill that can always be built upon! Let’s make some simple programs!]",
     "Do a technique breakdown\n[This shows people your way of thinking! Let’s break it down!]"
 ]
+
+LIST_03 = [
+    "Artist Study\n[Whose someone you idolize? Do a study on their work!]",
+    "People Watch\n[People do interesting things! Look for references in the real world!]",
+    "Get some coffee/chai/matcha!\n[Rest and grab a treat!]",
+    "Do some figure drawing\n[Studying the human form will help with perspective and dynamic poses!]",
+    "Watch a movie\n[Get inspired! Seeing what others have made gives you something to remix or create something entirely new!]"
+]
 DEFAULT_LIST = ["Sketch for 5 minutes", "Pick a detail to refine", "Sign it or scrap it — both are wins!"]
 
 '''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
@@ -36,6 +44,9 @@ ART_LISTS = {
     ("A2", "B1", "C2"): LIST_02,
     ("A2", "B2", "C2"): LIST_02,
     ("A2", "B1", "C3"): LIST_02,
+    ("A3", "B2", "C3"): LIST_03,
+    ("A1", "B3", "C3"): LIST_03,
+    ("A2", "B3", "C3"): LIST_03,
     # Add more combos later...
 }
 
