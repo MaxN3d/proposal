@@ -73,6 +73,14 @@ LIST_08 = [
     "Character designs\n[This gets your creative juices flowing!]",
     "Get some coffee/chai/matcha!\n[Rest and grab a treat!]"
 ]
+
+LIST_09 = [
+    "Character designs\n[This gets your creative juices flowing!]",
+    "Painting\n[Painting always helps refine color theory, form, and composition — plus it's fun!]",
+    "Practice animating body mechanics\n[Body mechanics will never disappear, so let's do some practice!]",
+    "Do a simple rig\n[Rigging is hard, so some practice will make it second nature!]",
+    "Do a beat/storyboard to dialogue\n[This helps by getting your creative juices flowing!]"
+]
 DEFAULT_LIST = ["Sketch for 5 minutes", "Pick a detail to refine", "Sign it or scrap it — both are wins!"]
 
 '''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
@@ -102,6 +110,9 @@ ART_LISTS = {
     ("A1", "B3", "C2"): LIST_08,
     ("A3", "B1", "C2"): LIST_08,
     ("A3", "B3", "C2"): LIST_08,
+    ("A1", "B1", "C2"): LIST_09,
+    ("A1", "B1", "C3"): LIST_09,
+    ("A2", "B1", "C1"): LIST_09
     # Add more combos later...
 }
 
