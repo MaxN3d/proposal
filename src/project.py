@@ -50,6 +50,13 @@ LIST_05 = [
     "Do a simple rig\n[Rigging is hard, so some practice will make it second nature!]"
 ]
 
+LIST_06 = [
+    "Bookmark Tutorials\n[Go on YouTube and find tutorials that pique your interest!]",
+    "Look for references aka doomscroll\n[It’s in the title!]",
+    "Pottery\n[Getting your hands dirty always helps break up a mundane routine!]",
+    "Painting\n[Painting always helps refine color theory, form, and composition — plus it's fun!]",
+    "Get some coffee/chai/matcha!\n[Rest and grab a treat!]"
+]
 DEFAULT_LIST = ["Sketch for 5 minutes", "Pick a detail to refine", "Sign it or scrap it — both are wins!"]
 
 '''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
@@ -70,6 +77,9 @@ ART_LISTS = {
     ("A2", "B2", "C3"): LIST_05,
     ("A1", "B2", "C1"): LIST_05,
     ("A1", "B2", "C2"): LIST_05,
+    ("A3", "B2", "C1"): LIST_06,
+    ("A3", "B1", "C1"): LIST_06,
+    ("A2", "B3", "C1"): LIST_06,
     # Add more combos later...
 }
 
