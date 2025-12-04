@@ -65,6 +65,14 @@ LIST_07 = [
     "Room Refresh\n[Let’s clean your space, clean room = clean mind!]",
     "Everything Shower\n[Use everything in the shower for some self-care!]"
 ]
+
+LIST_08 = [
+    "Bookmark Tutorials\n[Go on YouTube and find tutorials that pique your interest!]",
+    "Look for references aka doomscroll\n[It’s in the title!]",
+    "Artist Study\n[Whose someone you idolize? Do a study on their work!]",
+    "Character designs\n[This gets your creative juices flowing!]",
+    "Get some coffee/chai/matcha!\n[Rest and grab a treat!]"
+]
 DEFAULT_LIST = ["Sketch for 5 minutes", "Pick a detail to refine", "Sign it or scrap it — both are wins!"]
 
 '''DEFINE mapping called ART_LISTS that links specific (Q1-3) combinations to
@@ -91,6 +99,9 @@ ART_LISTS = {
     ("A1", "B3", "C1"): LIST_07,
     ("A2", "B3", "C2"): LIST_07,
     ("A3", "B2", "C2"): LIST_07,
+    ("A1", "B3", "C2"): LIST_08,
+    ("A3", "B1", "C2"): LIST_08,
+    ("A3", "B3", "C2"): LIST_08,
     # Add more combos later...
 }
 
