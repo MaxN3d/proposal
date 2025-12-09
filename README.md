@@ -1,5 +1,12 @@
 ## READ ME - DAILY ART LIST
+
+## GitHub Repository
 https://github.com/MaxN3d/proposal.git
+
+
+## Demo
+https://youtu.be/ww1cDS9Rnv8
+
 -------------------------------------
 Installments:
 - Have Python 3.X
