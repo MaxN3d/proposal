@@ -1,4 +1,5 @@
 ## READ ME - DAILY ART LIST
+https://github.com/MaxN3d/proposal.git
 -------------------------------------
 Installments:
 - Have Python 3.X
