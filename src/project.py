@@ -241,7 +241,7 @@ DISPLAY Q3 using radio buttons:
 '''
         create_radio_frame("Q3 – Lastly, where should you post your work?", self.q3_var, [
             ("TikTok", "C1"),
-            ("Instagram", "C2"),
+            ("LinkedIn", "C2"),
             ("Nowhere, because I'm lazy", "C3")
         ])
 
